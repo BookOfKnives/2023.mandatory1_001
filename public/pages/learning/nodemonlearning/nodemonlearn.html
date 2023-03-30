@@ -1,0 +1,24 @@
+<p>
+    I have learned about Nodemon. I'm not sure how to pronounce it. "No-Demon"? "Node-mon"?
+</p>
+
+<p>
+    Nodemon is an extension for NodeJS which keeps an eye on the files you're working on. When Nodemon detects changes in the files, it restarts the NodeJS server.
+    This is handy because it means I dont have to go to my console and restart the server in order to test the changes.
+    Normally, without Nodemon, every time I made changes in my code, I would have to press <kbd>ctrl + æ</kbd> (to go to console in VSCode), <kbd>ctrl + c</kbd> (terminates currently-running program in VSCode terminal) and then followed by <kbd>node app.js</kbd> (to start the server app again). At this point the server would restart and I would then have to open my browser in order to view the changes.
+</p>
+
+<p>
+    The above may not sound like much, but if each restart operation takes six seconds, it vvery quickly adds up over the course of app development.
+</p>
+
+<p>
+    Since Nodemon can be found in the Node Package Manager, installing Nodemon into a NodeJS environment is relatively straightforward: you go <code>npm i nodemon</code> and hit enter.
+    After NPM is done installing Nodemon, you can costumize which files Nodemon scans for, by creating a file (<code>touch nodemon.json</code> will do that, in terminal) the root of the project -- make sure this file is called "nodemon.json".
+    In the nodemon.json file, you can add any type of file extension you like, and nodemon'll then  scan for those file types also.
+</p>
+
+<p>
+    Once Nodemon is installed, you call <kbd>nodemon app.js</kbd> in the terminal to have Nodemon start up and "watch" that directory for changes.
+    This also causes nodeJS to start the app, as it would regularly.
+</p>

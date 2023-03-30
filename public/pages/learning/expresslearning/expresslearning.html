@@ -1,0 +1,17 @@
+<p>
+    Express is a NodeJS framework -- this means that Express is a set of pre-built sets of code designed to solve a specific set of tasks in a specific manner.
+    Specifically, Express handles server setup on behalf of NodeJS. Recall that NodeJS has the "http" module -- NodeJS uses this module to create servers, but, to do so, the programmer must
+    set a bunch of variables. Express does away with that by making assumptions about what the programmer wants the server to do.
+</p>
+
+<p>
+    To use Express, you gotta have Express installed in the NodeJS project (Node Package Manager handles this), and you gotta define a part of the NodeJS code (but much less than what you'd have to define if you were just using regular NodeJS).
+    Let's start with installing Express: in the directory of the NodeJS program into which you want to install Express, enter in the terminal, <kbd>npm i express</kbd>.
+    This command calls the Node Package Manager (<kbd>npm</kbd>) to install (<kbd>i</kbd>) Express (that's the <kbd>express</kbd> part) -- and then hit <code>enter</code>!
+</p>
+
+<p>
+    On hitting enter, NPM will do all kinds of scary things. If you were to examine the package.json file, you'd notice a new line has been added: the <pre>  "dependencies": {
+        "express": "^4.18.2",</pre>, which indicates (to the NPM) that Express is a requirement.
+    You can also do this in reverse: if you manually add the above "<kbd>requirements</kbd>" line to the package.json file and then run <kbd>npm i</kbd> (notice there's no <kbd>express</kbd> this time!), the NPM will examine the package.json, notice the Express dependency, and install it. Neat!
+</p>

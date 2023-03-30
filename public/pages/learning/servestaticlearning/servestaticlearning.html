@@ -1,0 +1,13 @@
+<p>
+    The web is not a safe place. Normally, you don't want to expose anything to the web, except the parts you DO want to expose.
+    In order to achieve this, NodeJS lets you define a folder for public viewing -- NodeJS calls this the statically-served folder.
+</p>
+
+<p>
+    In order to do this, we use the call <kbd>app.use(express.static("DIRECTORY"));</kbd>, where DIRECTORY is the folder we wish use set as the static folder. For instance, if I had a folder named "public", the call would be
+    <kbd>app.use(express.static("public"));</kbd>. 
+</p>
+
+<p>
+    After this is done, you can use the folders and files in the public folder as a path for any web resources your server has. Quite handy!
+</p>
